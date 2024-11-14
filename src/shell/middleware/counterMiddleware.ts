@@ -1,6 +1,6 @@
-import { delay, random } from '../effects';
-import { AppMiddleware, isAppAction } from '../store';
 import { AC, AT } from '@/core/actions';
+import { delay, random } from '@/shell/effects';
+import { AppMiddleware, isAppAction } from '@/shell/store';
 
 export const counterMiddleware: AppMiddleware =
   (store) => (next) => async (action) => {

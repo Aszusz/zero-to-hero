@@ -1,4 +1,4 @@
-import { AppMiddleware, isAppAction } from '../store';
+import { AppMiddleware, isAppAction } from '@/shell/store';
 
 export const loggerMiddleware: AppMiddleware = () => (next) => (action) => {
   if (!isAppAction(action) || action.type.startsWith('_')) {
