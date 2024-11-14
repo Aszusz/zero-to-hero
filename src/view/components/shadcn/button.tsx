@@ -1,9 +1,8 @@
-import * as React from 'react';
-import { Slot } from '@radix-ui/react-slot';
-
-import { cn } from '@/lib/shadcn';
 import { buttonVariants } from './buttonVariants';
+import { cn } from '@/lib/shadcn';
+import { Slot } from '@radix-ui/react-slot';
 import { VariantProps } from 'class-variance-authority';
+import * as React from 'react';
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
