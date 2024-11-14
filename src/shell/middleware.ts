@@ -1,13 +1,13 @@
 import { delay, random } from './effects';
+import { AppMiddleware } from './store';
 import { AC, Action, AT } from '@/core/actions';
-import { State } from '@/core/state';
-import { Dispatch, isAction, Middleware } from 'redux';
+import { isAction } from 'redux';
 
 export function isAppAction(action: unknown): action is Action {
   return isAction(action);
 }
 
-export const middleware: Middleware<object, State, Dispatch<Action>> =
+export const middleware: AppMiddleware =
   (store) => (next) => async (action) => {
     if (!isAppAction(action) || action.type.startsWith('_')) {
       return next(action);
