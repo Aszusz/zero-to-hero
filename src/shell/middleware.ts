@@ -13,11 +13,13 @@ export const middleware: AppMiddleware =
       return next(action);
     }
 
+    const result = next(action);
+
     if (action.type === AT['ui/increment-async']) {
       const rnd = random(5, 10);
       await delay(rnd * 200);
       store.dispatch(AC['eff/increment-async-ready'](rnd));
     }
 
-    return next(action);
+    return result;
   };
