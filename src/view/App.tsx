@@ -14,10 +14,10 @@ function App() {
       <h1 className="text-2xl font-semibold">Counter: {count}</h1>
 
       {/* Button grid container */}
-      <div className="grid grid-cols-2 gap-4 w-full">
+      <div className="grid w-full grid-cols-2 gap-4">
         {/* Increment button */}
         <button
-          className="rounded-lg bg-blue-500  px-4 py-2 font-semibold text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="rounded-lg bg-blue-500 px-4 py-2 font-semibold text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
           onClick={increment}
         >
           Increment
