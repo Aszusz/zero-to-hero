@@ -2,6 +2,7 @@ import {
   actionDef,
   makeActionCreators,
   makeActionTypes,
+  ReturnTypes,
   UnionOf,
 } from '@/lib/action-helper';
 
@@ -18,4 +19,4 @@ export const AT = makeActionTypes(actions);
 /* Action Creators */
 export const AC = makeActionCreators(actions);
 
-export type Action = UnionOf<typeof AC>;
+export type Action = UnionOf<ReturnTypes<typeof AC>>;

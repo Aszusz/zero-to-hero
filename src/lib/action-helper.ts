@@ -28,5 +28,10 @@ export function makeActionCreators<Map extends ActionInfoMap>(map: Map) {
   };
 }
 
-export type UnionOf<Creators extends { [key: string]: (arg: any) => any }> =
-  ReturnType<Creators[keyof Creators]>;
+export type AnyFunc = (...args: any[]) => any;
+
+export type UnionOf<T> = T[keyof T];
+
+export type ReturnTypes<T extends { [key: string]: AnyFunc }> = {
+  [K in keyof T]: ReturnType<T[K]>;
+};
