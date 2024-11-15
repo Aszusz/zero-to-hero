@@ -26,7 +26,7 @@ Pick a branch, clone it, and blast off. Each one’s geared for a different kind
 
 ---
 
-### 1. React Branch
+### 1. React
 
 The bare essentials, no frills. Think of it as React with a passport and a toothbrush.
 
@@ -49,7 +49,7 @@ degit aszusz/zero-to-react#react your-project
 
 ---
 
-### 2. React-ShadCN Branch
+### 2. React + ShadCN
 
 Everything from the **React Branch**, now with components so slick they probably moonlight as UI influencers.
 
@@ -66,7 +66,7 @@ degit aszusz/zero-to-react#react-shadcn your-project
 
 ---
 
-### 3. React-Redux Branch
+### 3. React + Redux
 
 State management? Yes. Overhead? Just slightly. Add Redux without drowning in boilerplate—this template embraces just enough structure to buy us great scalability and a highly predictable coding style where everything has its exact place. It's the kind of organized overhead you'll appreciate when your app scales to infinity (and beyond).
 
@@ -89,7 +89,7 @@ degit aszusz/zero-to-react#react-redux your-project
 
 ---
 
-### 4. React-Redux-ShadCN Branch
+### 4. React + Redux + ShadCN
 
 The full monty: state management and beautiful, accessible components. It’s like the Avengers, but for your app.
 
